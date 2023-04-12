@@ -1,0 +1,99 @@
+@import './breakpoints';
+
+@mixin comment-reply() {
+    .titleAndComment {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        .titleContainer {
+            display: flex;
+            align-items: center;
+            gap: 1.6rem;
+            font-size: 1.6em;
+
+            .avatar {
+                width: 3.2rem;
+                height: 3.2rem;
+            }
+
+            .userName {
+                line-height: 1.1875em;
+                color: #334253;
+            }
+
+            .time {
+                line-height: 1.5em;
+                font-weight: 400;
+                color: #67727E;
+            }
+        }
+
+        .comment {
+            font-size: 1.6em;
+            line-height: 1.5em;
+            color: #67727E;
+            font-weight: 400;
+        }
+    }
+
+    .sectionFooter {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .voteSystem {
+            width: 10rem;
+            height: 4rem;
+            font-size: 1.6em;
+            line-height: 1.1875em;
+            padding: 0.625em, 0.75em;
+            background-color: #F5F6FA;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .upVote {
+                width: 1rem;
+                height: 1rem;
+                cursor: pointer;
+            }
+
+            .vote {
+                font-size: 1em;
+                line-height: 1.1875em;
+                color: #5357B6;
+                cursor: pointer;
+            }
+
+            .downVote {
+                width: 1rem;
+                height: 0.25rem;
+                cursor: pointer;
+            }
+        }
+
+        .replyDiv {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            cursor: pointer;
+
+            &:hover {
+                .replyText {
+                    color: #C5C6EF;
+                }
+
+                img {
+                    filter: hue-rotate();
+                }
+            }
+
+            .replyText {
+                font-size: 1.6em;
+                line-height: 1.5em;
+                color: #5357B6;
+            }
+        }
+    }
+}
