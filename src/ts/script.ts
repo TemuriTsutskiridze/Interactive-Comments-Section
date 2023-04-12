@@ -66,17 +66,17 @@ function loadData(data: any) {
         const voteSystem: HTMLDivElement = createaDomElement("div", "voteSystem", null, null);
         sectionFooter.append(voteSystem);
 
-        const upVote: HTMLImageElement = createaDomElement("img", "upVote", null, "/images/icon-plus.svg");
+        const upVote: HTMLImageElement = createaDomElement("img", "upVote", null, "./images/icon-plus.svg");
         voteSystem.append(upVote);
 
         const vote: HTMLParagraphElement = createaDomElement("p", "vote", element.score, null);
         voteSystem.append(vote);
 
-        const downVote: HTMLImageElement = createaDomElement("img", "downVote", null, "/images/icon-minus.svg")
+        const downVote: HTMLImageElement = createaDomElement("img", "downVote", null, "./images/icon-minus.svg")
         voteSystem.append(downVote);
 
         const replyDiv: HTMLDivElement = createaDomElement("div", "replyDiv", null, null);
-        const replyIcon: HTMLImageElement = createaDomElement("img", null, null, "/images/icon-reply.svg");
+        const replyIcon: HTMLImageElement = createaDomElement("img", null, null, "./images/icon-reply.svg");
         const replyText: HTMLParagraphElement = createaDomElement("p", "replyText", "Reply", null);
         replyDiv.append(replyIcon);
         replyDiv.append(replyText);
@@ -116,17 +116,17 @@ function loadData(data: any) {
             const voteSystem: HTMLDivElement = createaDomElement("div", "voteSystem", null, null);
             sectionFooter.append(voteSystem);
 
-            const upVote: HTMLImageElement = createaDomElement("img", "upVote", null, "/images/icon-plus.svg");
+            const upVote: HTMLImageElement = createaDomElement("img", "upVote", null, "./images/icon-plus.svg");
             voteSystem.append(upVote);
 
             const vote: HTMLParagraphElement = createaDomElement("p", "vote", element.score, null);
             voteSystem.append(vote);
 
-            const downVote: HTMLImageElement = createaDomElement("img", "downVote", null, "/images/icon-minus.svg")
+            const downVote: HTMLImageElement = createaDomElement("img", "downVote", null, "./images/icon-minus.svg")
             voteSystem.append(downVote);
 
             const replyDiv: HTMLDivElement = createaDomElement("div", "replyDiv", null, null);
-            const replyIcon: HTMLImageElement = createaDomElement("img", null, null, "/images/icon-reply.svg");
+            const replyIcon: HTMLImageElement = createaDomElement("img", null, null, "./images/icon-reply.svg");
             const replyText: HTMLParagraphElement = createaDomElement("p", "replyText", "Reply", null);
             replyDiv.append(replyIcon);
             replyDiv.append(replyText);
